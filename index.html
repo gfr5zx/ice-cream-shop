@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ice Cream Shop</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🍦 Ice Cream Shop</h1>
+  </header>
+  <main>
+    <section id="flavors">
+      <h2>Our Flavors</h2>
+      <div class="cards"></div>
+    </section>
+    <section id="order">
+      <h2>Order Form</h2>
+      <form id="orderForm">
+        <label>Name: <input type="text" id="name" required /></label>
+        <label>Flavor:
+          <select id="flavorSelect"></select>
+        </label>
+        <label>Quantity: <input type="number" id="qty" min="1" value="1"/></label>
+        <button type="submit">Order</button>
+      </form>
+      <div id="orderResult"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
